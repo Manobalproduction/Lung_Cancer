@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AR Asthma Viewer</title>
+  <title>AR Lung Cancer Viewer</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
     body {
@@ -18,22 +18,22 @@
       background-color: #f4f4f4;
       width: 100%;
       text-align: center;
-      font-family: "Helvetica Neue", Arial, sans-serif; /* Font set to Helvetica Neue */
-      font-weight: 900; /* Black weight for Helvetica Neue */
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-weight: 900;
       font-size: 24px;
       color: black;
     }
     model-viewer {
       width: 100%;
-      height: calc(100vh - 50px); /* Adjust height to leave space for the title */
+      height: calc(100vh - 50px);
     }
   </style>
 </head>
 <body>
-  <h1>ASTHMA</h1>
+  <h1>LUNG CANCER</h1>
   <model-viewer 
-    src="asthama.glb" 
-    ios-src="asthama.usdz"
+    src="cancer.glb" 
+    ios-src="cancer.usdz"
     ar 
     ar-modes="webxr scene-viewer quick-look" 
     camera-controls 
