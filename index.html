@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AR Lung Cancer Viewer</title>
+  <title>AR Asthma Viewer</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
     body {
@@ -11,6 +11,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
     }
     h1 {
       margin: 0;
@@ -27,9 +28,25 @@
       width: 100%;
       height: calc(100vh - 50px);
     }
+    .back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+    }
+    .back-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
+  <a href="https://manobalproduction.github.io/Lungs_AR/" class="back-button">Back</a>
   <h1>LUNG CANCER</h1>
   <model-viewer 
     src="cancer.glb" 
